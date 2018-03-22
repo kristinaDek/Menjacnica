@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.apt.aptEnabled=true
+org.eclipse.jdt.apt.genSrcDir=https\://github.com/kristinaDek/Menjacnica
+org.eclipse.jdt.apt.processorOptions/user.email=kristina.dekic8@gmail.com
+org.eclipse.jdt.apt.processorOptions/user.name=kristinaDek
+org.eclipse.jdt.apt.reconcileEnabled=true
