@@ -11,6 +11,9 @@ public class Valuta {
 	private double kupovni;
 	private double srednji;
 	
+	public Valuta() {
+		
+	}
 	public Valuta(String naziv, String skraceniNaziv, GregorianCalendar datum, double prodajni, double kupovni, double srednji) {
 		
 		this.setNaziv(naziv);
