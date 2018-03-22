@@ -8,10 +8,8 @@ import valute.Valuta;
 
 public class Menjacnica implements InterfejsMenjacnice {
 	
-<<<<<<< HEAD
-=======
+
 	ArrayList<Valuta> v = new ArrayList<Valuta>();
->>>>>>> refs/heads/implementacijainterfejsa
 	
 	
 	@Override
