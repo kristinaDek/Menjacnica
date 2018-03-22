@@ -11,10 +11,14 @@ public class Valuta {
 	private double kupovni;
 	private double srednji;
 	
+	
 	public String getNaziv() {
 		return naziv;
 	}
 	public void setNaziv(String naziv) {
+		if(naziv == null || naziv.isEmpty()) {
+			throw new RuntimeException("Unet neodgovarajuci String.");
+		}
 		this.naziv = naziv;
 	}
 	
@@ -22,6 +26,9 @@ public class Valuta {
 		return skraceniNaziv;
 	}
 	public void setSkraceniNaziv(String skraceniNaziv) {
+		if(skraceniNaziv == null || skraceniNaziv.isEmpty()) {
+			throw new RuntimeException("Unet neodgovarajuci String.");
+		}
 		this.skraceniNaziv = skraceniNaziv;
 	}
 	
@@ -29,6 +36,9 @@ public class Valuta {
 		return datum;
 	}
 	public void setDatum(GregorianCalendar datum) {
+		if(datum == null) {
+			throw new RuntimeException("Unet neodgovarajuci datum.");
+		}
 		this.datum = datum;
 	}
 	
@@ -36,6 +46,9 @@ public class Valuta {
 		return prodajni;
 	}
 	public void setProdajni(double prodajni) {
+		if(prodajni <= 0) {
+			throw new RuntimeException("Uneta neodgovarajuca vrednost.");
+		}
 		this.prodajni = prodajni;
 	}
 	
@@ -43,6 +56,9 @@ public class Valuta {
 		return kupovni;
 	}
 	public void setKupovni(double kupovni) {
+		if(kupovni <= 0) {
+			throw new RuntimeException("Uneta neodgovarajuca vrednost.");
+		}
 		this.kupovni = kupovni;
 	}
 	
@@ -50,6 +66,9 @@ public class Valuta {
 		return srednji;
 	}
 	public void setSrednji(double srednji) {
+		if(srednji <= 0) {
+			throw new RuntimeException("Uneta neodgovarajuca vrednost.");
+		}
 		this.srednji = srednji;
 	}
 	@Override
