@@ -87,11 +87,6 @@ public class Valuta {
 			return false;
 		return true;
 	}
-	@Override
-	public String toString() {
-		return "Valuta [naziv=" + naziv + ", skraceniNaziv=" + skraceniNaziv + ", datum=" + datum + ", prodajni="
-				+ prodajni + ", kupovni=" + kupovni + ", srednji=" + srednji + "]";
-	}
 	
 	
 }
